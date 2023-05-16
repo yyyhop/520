@@ -43,24 +43,15 @@
   </head>
 
   <body>
-    <script>
-        var sWord = prompt("请输入正确密码","");
-        var password = btoa("Óm½")
-        var isCancle = false;
-        while(sWord!=password){
-            if(sWord==null){
-                isCancle = true;
-                break;
-            }
-            else{
-                sWord = prompt("别想偷看！！！","");
-            }
-        }
-        if(!isCancle){
-            alert("欢迎高姐(づ￣ 3￣)づ")
-        }
-        else{ sWord = prompt("别想偷看！！！")
-        }
+    <script type="text/javascript">   
+      loopy()   
+      function loopy() {   
+      var sWord =""  
+      while (sWord != btoa("Óm½")) {
+      sWord = prompt("别想偷看！！！")   
+      }   
+      alert("欢迎高姐(づ￣ 3￣)づ")   
+      }  
     </script>
     <div class="box">
       <div>
